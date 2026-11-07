@@ -1,0 +1,485 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.carousel-indicators {
+    margin-right: 2%;
+    flex-direction: column;
+    left: 80%;
+    bottom: 95%;
+}
+.carousel-indicators [data-bs-target] {
+  width: 8px;
+  height: 8px;
+ 
+}
+.carousel-caption {
+    bottom: 35%;
+}
+.hhh::before{
+    content: "";
+    width: 100px;
+    height: 4px;
+    background-color: blue;
+    position:absolute;
+    left: -105px;;
+    top: 80%;
+}
+.hhh::after{
+    content: "";
+    width: 100px;
+    height: 4px;
+    background-color: blue;
+    position:absolute;
+    right:-105px;;
+    top: 80%;
+}
+.span1::before{
+    content: "";
+    width: 80px;
+    height: 4px;
+    background-color: blue;
+    position:absolute;
+    left: -85px;;
+    top: 50%;
+}
+.span1::after{
+    content: "";
+    width: 80px;
+    height: 4px;
+    background-color: blue;
+    position:absolute;
+    right: -85px;;
+    top: 50%;
+}
+.bg-white {
+    margin-top: 25px;
+}
+ @media(min-width:768px){
+     .style {
+        position: absolute;
+        left:40px;
+     }
+   
+ }
+ .img {
+    background-image: url(../photo6.jpg);
+    background-repeat:no-repeat ;
+    background-size: 100% 100%;
+    background-position: fixed;
+}
+
+.overlay{
+    background-color: rgba(0,0,0,0.7);
+}
+.parent{
+    position: relative;
+    overflow: hidden;
+}
+.child {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left:0;
+    transition: all 1s;
+    top: 100%;
+}
+.parent:hover .child {
+    top:0;
+    margin: 0;
+}
+
+ .child1 {
+    left: 12.5%;
+    bottom: 5%;
+    transform: scaleX(0);
+    transition: all 1s;
+}
+.parent1:hover .child1{
+    transform: scaleX(1);
+}
+
+ .parent1:hover img {
+    box-shadow: 0px 0px 3px 3px rgb(226, 223, 223);
+}
+
+
+.child2 {
+    left: 2.5%;
+    width: 95%;
+    top: 86%;
+}
+.parent2:hover .child2{
+   top: 60%;
+}
+
+ .chil2:hover img {
+    box-shadow: 0px 0px 3px 3px rgb(226, 223, 223);
+    
+}
+
+
+.btn {
+   margin-left: 60px;
+   border-radius: 30px;
+}
+
+.sec9 {
+    height: 80px;
+   
+}
+.latest-blogs{
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    position: relative;
+}
+.latest-blogs .card img{
+    transition: transform 0.2s,box-shadow 0.2s;
+   
+}
+
+.latest-blogs .card:hover img{
+   transform: scale(1.05) rotate(-4deg);
+   box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+.card{
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+.blog-item {
+   overflow: hidden;
+   max-width: 100%;
+   border: 0;
+}
+.blog-item img {
+    transition: all .3s linear;
+    width: 100%;
+}
+.card:hover .icons{
+    background-color: rgb(0, 81, 255);
+}
+.pg:hover {
+    color: blue;
+}
+
+.icons{
+    background-color: black;
+}
+.icons:hover{
+    background-color: blue;
+}
+
+
+
+/*.hhhh::before{
+    content: "";
+    width: 100px;
+    height: 4px;
+    background-color: blue;
+    position:absolute;
+    left: -105px;;
+    top: 80%;
+}*/
+.hhhh::after{
+    content: "";
+    width: 100px;
+    height: 4px;
+    background-color: blue;
+    position:absolute;
+    right:-105px;;
+    top: 80%;
+}
+/*.span2::before{
+    content: "";
+    width: 80px;
+    height: 4px;
+    background-color: blue;
+    position:absolute;
+    left: -85px;;
+    top: 50%;
+}*/
+.span2::after{
+    content: "";
+    width: 80px;
+    height: 4px;
+    background-color: blue;
+    position:absolute;
+    right: -85px;;
+    top: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.sec2{
+    height: 400px;
+    padding: 10%;
+}
+.div1 {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    float: left;
+    position: relative;
+    margin: 40px;
+    animation-name: changeStyle;
+    animation-duration: 5s;
+    animation-iteration-count:infinite;
+}
+
+.div2 {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    float:left ;
+    position: relative;
+    margin: 40px;
+    animation-name: changeStyle;
+    animation-duration: 5s;
+    animation-iteration-count:infinite;
+   
+}
+.div3 {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    float: left;
+    position: relative;
+    margin: 40px;
+    animation-name: changeStyle;
+    animation-duration: 5s;
+    animation-iteration-count:infinite;
+}
+
+@keyframes changeStyle{
+    from{
+        background-color: red;
+        transform: skewX(10deg);
+    }
+    to{
+        background-color: yellow;
+        transform: skewX(30deg);
+    }
+}
+
+
+.sec3{
+    height: 400px;
+    padding: 10%;
+}
+.div4 {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    float: left;
+    position: relative;
+    margin: 40px;
+    animation-name: changeColor;
+    animation-duration: 5s;
+    animation-iteration-count:infinite;
+}
+
+.div5 {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    float:left ;
+    position: relative;
+    margin: 40px;
+    animation-name: changeColor;
+    animation-duration: 5s;
+    animation-iteration-count:infinite;
+   
+}
+.div6 {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(124, 124, 175);
+    float: left;
+    position: relative;
+    margin: 40px;
+    animation-name: changeColor;
+    animation-duration: 5s;
+    animation-iteration-count:infinite;
+}
+
+
+@keyframes changeColor{
+    from{
+        background-color: gray;
+        transform: skewy(20deg);
+    }
+    to{
+
+        transform: skewy(30deg);
+    }
+}
+
+
+.sec4{
+    height: 400px;
+    padding: 10%;
+}
+.div7 {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    float: left;
+    position: relative;
+    margin: 40px;
+    animation-name: changeSection;
+    animation-duration: 5s;
+    animation-iteration-count:infinite;
+}
+
+.div8 {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    float:left ;
+    position: relative;
+    margin: 40px;
+    animation-name: changeSection;
+    animation-duration: 5s;
+    animation-iteration-count:infinite;
+   
+}
+.div9 {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    float: left;
+    position: relative;
+    margin: 40px;
+    animation-name: changeSection;
+    animation-duration: 5s;
+    animation-iteration-count:infinite;
+}
+
+
+@keyframes changeSection{
+    from{
+        background-color: rgb(219, 25, 25);
+        transform: skewX(20deg);
+    }
+    to{
+
+        transform: skewy(50deg);
+    }
+}
+
+.sec5{
+    height: 400px;
+    padding: 10%;
+}
+.div11 {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(207, 51, 187);
+    float: left;
+    position: relative;
+    margin: 40px;
+    animation-name: changeVection;
+    animation-duration: 5s;
+    animation-iteration-count:infinite;
+}
+
+.div12 {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    float:left ;
+    position: relative;
+    margin: 40px;
+    animation-name: changeVection;
+    animation-duration: 5s;
+    animation-iteration-count:infinite;
+   
+}
+
+
+@keyframes changeVection{
+    from{
+        background-color: rgb(25, 219, 73);
+        transform: rotate(0deg)
+    }
+    to{
+
+        transform: rotate(360deg);
+    }
+}
+.sec6 {
+    height: 300px;
+    padding: 10%;
+}
+.div13 {
+    width: 200px;
+    height: 200px;
+    margin-left: 50px;
+    background-color: rgb(190, 190, 49);
+    border-radius: 50%;
+    animation-duration: 5s;
+    animation-iteration-count:infinite;
+    animation-name: changeXection;
+    animation-duration: alternate;
+    
+}
+
+
+@keyframes changeXection{
+    from{
+        background-color: rgb(25, 219, 73);
+        transform:translate(100px)
+    }
+    to{
+transform: translate(-100px);
+       
+    }
+}*/
+
+
+
